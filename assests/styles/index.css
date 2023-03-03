@@ -10,7 +10,8 @@
 #hero {
   height: 60vh;
   background-attachment: fixed;
-  background-image: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNlcnZpY2UlMjBjb21wYW55fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60);
+  /* background-image: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNlcnZpY2UlMjBjb21wYW55fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60); */
+  background-color: #192a36;
   background-size: contain;
   background-repeat: no-repeat;
 }
