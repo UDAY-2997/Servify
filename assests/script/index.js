@@ -12,5 +12,8 @@ const mediaRun = new IntersectionObserver((views) => {
   });
 });
 
-const mediaElements = document.querySelectorAll(".page3-box");
-mediaElements.forEach((e) => mediaRun.observe(e));
+const mediaElements1 = document.querySelectorAll(".page3-box");
+mediaElements1.forEach((e) => mediaRun.observe(e));
+
+const mediaElements2 = document.querySelectorAll(".page3-box-1");
+mediaElements2.forEach((e) => mediaRun.observe(e));

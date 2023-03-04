@@ -24,6 +24,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* Header*/
 
 header {
@@ -91,7 +94,7 @@ nav ul li + li {
 /* HERO BANNER */
 
 #hero {
-  height: 80vh;
+  height: 100vh;
   background-attachment: fixed;
   /* background-image: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNlcnZpY2UlMjBjb21wYW55fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60); */
   background-color: #192a36;
@@ -145,6 +148,7 @@ nav ul li + li {
 }
 .button:hover {
   background-color: var(--app-red-hover);
+  color: #fff;
 }
 
 .page3 {
@@ -166,11 +170,22 @@ nav ul li + li {
   transform: translate(-100%);
 }
 
- @media (prefers-reduced-motion) {
+.page3-box-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+  transform: translateX(100%);
+}
+
+/* @media (prefers-reduced-motion) {
   .page3-box {
     transition: none;
   }
-} 
+} */
 
 .show {
   opacity: 1;
@@ -181,7 +196,6 @@ nav ul li + li {
 .page3-img {
   max-width: 450px;
   width: 100%;
-  animation: rightin 2s ease-in-out;
 }
 .information {
   flex: 1;
@@ -190,20 +204,17 @@ nav ul li + li {
 button.learn-more {
   background-color: #fff;
   color: #292b2c;
-  animation: bottomin 2s ease-in-out;
 }
 .info-title {
   color: var(--app-red);
   font-size: 30px;
   font-weight: bold;
-  animation: topin 2s ease-in-out;
 }
 .info-all {
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 17px;
-  animation: leftin 2s ease-in-out;
 }
 
 .items ul li {
@@ -211,76 +222,37 @@ button.learn-more {
   font-size: 20px;
 }
 
-@keyframes leftin {
-  from {
-    transform: translateX(-1000px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes rightin {
-  from {
-    transform: translateX(1000px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes topin {
-  from {
-    transform: translateY(-1000px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes bottomin {
-  from {
-    transform: translateY(1000px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-} 
-
 /* Footer -- - - - - - - */
 
-
-footer{
+footer {
   position: absolute;
   width: 100%;
   height: 75px;
   background-color: #16232d;
-  
 }
 
 footer .flex {
   display: flex;
   justify-content: space-between;
 }
-.social{
+.social {
   display: flex;
   justify-content: space-between;
-
 }
 
-.social a{
-   width: 45px;
-   height: 33px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: var(--app-blue);
-   border-radius: 50%;
-   margin: 22px 10px;
-   color: #fff;
-   text-decoration: none;
-   font-size: 20px;
-   line-height: 55px;
+.social a {
+  width: 45px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--app-blue);
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 55px;
 }
 
 .social a:hover {
@@ -288,12 +260,87 @@ footer .flex {
   transition: 0.3s ease-in-out;
 }
 
-.end{
- 
-  color:var(--app-red-hover);
+.end {
+  color: var(--app-red-hover);
   line-height: 75px;
   font-size: 20px;
   font-weight: 400;
-
 }
 
+/* PARALLAX */
+
+#projects .parallax {
+  background-image: url("");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 90px 0px 90px;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 60px 0px;
+  color: #f0f1ff;
+}
+
+#projects h3 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #565656;
+}
+
+#projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#projects .row .column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  max-width: 230px;
+  background-color: #f0f8ff;
+  height: 340px;
+  padding: 10px 15px;
+  color: #565656;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 0.1);
+}
+
+#projects .row .column:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #f0f1ff;
+  box-shadow: 0px 0px 10px #ececec;
+}
+
+#projects .row .column button a {
+  padding: 8px 13px;
+  background: #ececec;
+  color: #565656;
+  border-radius: 5px;
+}
+
+#projects .row .column button a:hover {
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+  background-color: #fecfcf;
+  box-shadow: 0px 0px 10px #ececec;
+}
+
+#projects .row .column img {
+  width: auto;
+  height: 160px;
+}
+/* PARALLAX ENDS */
