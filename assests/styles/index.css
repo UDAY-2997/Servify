@@ -63,7 +63,7 @@ nav ul li {
 nav ul li a {
   color: var(--app-grey);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   position: relative;
   letter-spacing: 0.2px;
@@ -185,6 +185,7 @@ nav ul li + li {
   .page3-box {
     transition: none;
   }
+} */
 } */
 
 .show {
