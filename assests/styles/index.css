@@ -187,6 +187,29 @@ button.learn-more {
   line-height: 1.4;
   font-size: 17px;
 }
+.items ul {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin-left: 60px;
+  margin-right: 10px;
+}
+  
+
+.items ul li {
+ 
+  line-height: 52px;
+}
+
+.items ul li a {
+  color: var(--app-grey);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  line-height: 100px;
+
+}
 
 @media (max-width: 840px) {
   .information {
