@@ -181,12 +181,12 @@ nav ul li + li {
   transform: translateX(100%);
 }
 
-/* @media (prefers-reduced-motion) {
+ /* @media (prefers-reduced-motion) {
   .page3-box {
     transition: none;
   }
-} */
-} */
+}  */
+
 
 .show {
   opacity: 1;
