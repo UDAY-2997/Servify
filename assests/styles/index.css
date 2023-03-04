@@ -91,12 +91,14 @@ nav ul li + li {
 /* HERO BANNER */
 
 #hero {
-  height: 50vh;
+  height: 80vh;
   background-attachment: fixed;
   /* background-image: url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNlcnZpY2UlMjBjb21wYW55fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60); */
   background-color: #192a36;
   background-size: contain;
   background-repeat: no-repeat;
+  display: grid;
+  align-items: center;
 }
 .hero-banner {
   display: flex;
@@ -158,10 +160,28 @@ nav ul li + li {
   flex-wrap: wrap;
   align-items: center;
   padding: 20px 0;
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+  transform: translate(-100%);
 }
+
+/* @media (prefers-reduced-motion) {
+  .page3-box {
+    transition: none;
+  }
+} */
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+
 .page3-img {
   max-width: 450px;
   width: 100%;
+  animation: rightin 2s ease-in-out;
 }
 .information {
   flex: 1;
@@ -170,31 +190,59 @@ nav ul li + li {
 button.learn-more {
   background-color: #fff;
   color: #292b2c;
+  animation: bottomin 2s ease-in-out;
 }
 .info-title {
   color: var(--app-red);
   font-size: 30px;
   font-weight: bold;
+  animation: topin 2s ease-in-out;
 }
 .info-all {
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 17px;
+  animation: leftin 2s ease-in-out;
 }
 
 .items ul li {
   color: var(--app-grey);
-
   font-size: 20px;
 }
-
-@media (max-width: 840px) {
-  .information {
-    padding-left: 0;
-    text-align: center;
+/* 
+@keyframes leftin {
+  from {
+    transform: translateX(-1000px);
   }
-  .page3-box {
-    justify-content: center;
+  to {
+    transform: translateY(0px);
   }
 }
+
+@keyframes rightin {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes topin {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bottomin {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+} */
