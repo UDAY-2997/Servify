@@ -60,7 +60,7 @@ nav ul li {
 nav ul li a {
   color: var(--app-grey);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   position: relative;
   letter-spacing: 0.2px;
@@ -166,11 +166,11 @@ nav ul li + li {
   transform: translate(-100%);
 }
 
-/* @media (prefers-reduced-motion) {
+ @media (prefers-reduced-motion) {
   .page3-box {
     transition: none;
   }
-} */
+} 
 
 .show {
   opacity: 1;
@@ -210,7 +210,7 @@ button.learn-more {
   color: var(--app-grey);
   font-size: 20px;
 }
-/* 
+
 @keyframes leftin {
   from {
     transform: translateX(-1000px);
@@ -245,4 +245,55 @@ button.learn-more {
   to {
     transform: translateY(0px);
   }
-} */
+} 
+
+/* Footer -- - - - - - - */
+
+
+footer{
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  background-color: #16232d;
+  
+}
+
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.social a{
+   width: 45px;
+   height: 33px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--app-blue);
+   border-radius: 50%;
+   margin: 22px 10px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   line-height: 55px;
+}
+
+.social a:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+.end{
+ 
+  color:var(--app-red-hover);
+  line-height: 75px;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
