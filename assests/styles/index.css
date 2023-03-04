@@ -1,8 +1,95 @@
 @import url(./reset.css);
 
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-red-hover: #ff2846;
+    --app-grey: #bebebe;
+    --app-light-white: #f1f1f1;
+  }
+
+
+/* container */
+
+
 .container {
-  width: min(100% - 30px, 1080px);
-  margin-inline: auto;
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header*/
+
+header {
+    background-color: #16232d;
+    height: 100px;
+}
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+   height: 100px;
+   width: 100px;
+   background-size: cover;}
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin-left: 60px;
+    margin-right: 10px;
+    line-height: 80px;
+}
+
+nav ul li {
+    align-content: flex-end;
+    display: flex;
+    display: inline;
+    line-height: 52px;
+}
+
+nav ul li a {
+    color: var(--app-grey);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.2px;
+    line-height: 100px;
+    text-transform: uppercase;
+  
+}
+
+nav ul li a::after {
+    color: #4c66c4d2;
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--app-blue-hover);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+ width: 50%;
+}
+nav ul li+li {
+    margin-left: 20px;
 }
 
 /* HERO BANNER */
@@ -23,7 +110,7 @@
 }
 
 .name {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 35px;
   padding-bottom: 10px;
@@ -53,7 +140,6 @@
   padding: 12px 17px;
   border-radius: 5px;
   border: 0;
-
   font-weight: bold;
   background-color: #fff;
   font-size: 100%;
@@ -61,7 +147,7 @@
   margin-top: 5px;
 }
 .button:hover {
-  background-color: red;
+  background-color: var(--app-red-hover);
 }
 
 .page3 {
@@ -91,7 +177,7 @@ button.learn-more {
   color: #292b2c;
 }
 .info-title {
-  color: #fff;
+  color: var(--app-red);
   font-size: 30px;
   font-weight: bold;
 }
