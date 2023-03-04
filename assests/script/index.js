@@ -1,7 +1,3 @@
-
-
-
-
 const mediaRun = new IntersectionObserver((views) => {
   views.forEach((view) => {
     if (view.isIntersecting) {
