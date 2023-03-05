@@ -1,3 +1,11 @@
 # Servify
+## Welcome
 
-<a href="https://github.com/Iamshubhamhere/Servify.git"> Here is our link to the website </a>
+ Our Team - 
+Shubham 
+Uday 
+
+### OUR HOUSE WEBSITE
+
+Click [here](https://iamshubhamhere.github.io/Servify/) to visit.
+
