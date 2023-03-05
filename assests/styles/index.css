@@ -24,9 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
+
 /* Header*/
 
 header {
@@ -93,6 +91,10 @@ nav ul li + li {
 
 /* HERO BANNER */
 
+.backimg {
+  background: transparent url(../images//all-pages-2.png) right center / contain no-repeat;
+  min-height: 100vh;
+}
 #hero {
   height: 100vh;
   background-attachment: fixed;
@@ -104,28 +106,42 @@ nav ul li + li {
   align-items: center;
 }
 .hero-banner {
-  display: flex;
+  
   justify-content: center;
-  padding: 5% 20px 5%;
+  padding: 10% 20px 5%;
   filter: grayscale(10%);
+  
 }
 
 .name {
-  font-size: 60px;
+
+  font-size: 150px;
   font-weight: 600;
   line-height: 35px;
   padding-bottom: 10px;
+   color: transparent;
+    -webkit-text-stroke: 1px #ff8001;
+    background: url(../images/back.png) center center / cover;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 13s linear infinite;
+    
+}
+
+@keyframes back {
+  100% {
+      background-position: 2000px 0;
+  }
 }
 
 .title1 {
   color: #ff8001;
   letter-spacing: 2px;
-  font-size: 20px;
-  padding: 5% 0px;
+  font-size: 30px;
+  padding: 4% 0px;
 }
 .title2 {
   color: #fff;
-
   font-size: 40px;
   font-weight: bold;
 }
@@ -157,41 +173,36 @@ nav ul li + li {
 }
 .page4 {
   background-color: #192a36;
-  padding-top: 5%;
+  padding: 5% 0px;
 }
 .page3-box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 20px 0;
-  opacity: 0;
+  /* opacity: 0;
   transition: all 2s;
   filter: blur(5px);
-  transform: translate(-100%);
+  transform: translate(-100%); */
 }
 
 .page3-box-1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0;
   opacity: 0;
   transition: all 2s;
   filter: blur(5px);
-  transform: translateX(100%);
+  transform: translateX(100%); */
 }
 
-/* @media (prefers-reduced-motion) {
-  .page3-box {
-    transition: none;
-  }
-} */
-
+/*
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translate(0);
-}
+} */
 
 .page3-img {
   max-width: 450px;
@@ -227,8 +238,7 @@ button.learn-more {
 footer {
   position: absolute;
   width: 100%;
-  height: 75px;
-  background-color: #16232d;
+  background-color: #192a36;
 }
 
 footer .flex {
@@ -268,16 +278,19 @@ footer .flex {
 }
 
 /* PARALLAX */
-
+#projects {
+  background-color:#16232d ;
+}
 #projects .parallax {
-  background-image: url("");
+  /* background-image: url("../images/background.jpg"); */
+  
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  margin: 90px 0px 90px;
+ 
 }
 
 #projects h2 {
@@ -342,5 +355,14 @@ footer .flex {
 #projects .row .column img {
   width: auto;
   height: 160px;
+}
+
+#projects .parallax .container {
+  background-color:#16232d ;
+  
+}
+
+#projects .parallax {
+  background-color:#16232d ;
 }
 /* PARALLAX ENDS */
