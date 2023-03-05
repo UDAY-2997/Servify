@@ -1,6 +1,6 @@
 # Servify
 
-## Here is the callab project (MITT)
+## Here is the collab project (MITT)
 
 
 
