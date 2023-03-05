@@ -65,6 +65,7 @@ nav ul li a {
   color: var(--app-grey);
   font-weight: 600;
   font-size: 18px;
+  letter-spacing: 0.4px;
   text-decoration: none;
   position: relative;
   letter-spacing: 0.2px;
@@ -117,6 +118,7 @@ nav ul li + li {
 
 .name {
   font-size: 60px;
+  letter-spacing: 0.6px;
   font-weight: 600;
   line-height: 35px;
   padding-bottom: 10px;
@@ -126,18 +128,21 @@ nav ul li + li {
   color: #ff8001;
   letter-spacing: 2px;
   font-size: 20px;
+  letter-spacing: 0.4px;
   padding: 5% 0px;
 }
 .title2 {
   color: #fff;
   font-size: 40px;
+  letter-spacing: 0.4px;
   font-weight: bold;
 }
 .introduce {
   color: #caccce;
   padding-bottom: 10px;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 18px;
+  letter-spacing: 0.4px;
 }
 
 .button {
@@ -147,7 +152,7 @@ nav ul li + li {
   font-weight: bold;
   background-color: #fff;
   font-size: 100%;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   margin-top: 5px;
 }
 .button:hover {
@@ -211,17 +216,20 @@ button.learn-more {
   color: var(--app-red);
   font-size: 30px;
   font-weight: bold;
+  letter-spacing: 0.6px;
 }
 .info-all {
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 17px;
+  letter-spacing: 0.4px;
 }
 
 .items ul li {
   color: var(--app-grey);
   font-size: 20px;
+  letter-spacing: 0.4px;
 }
 
 /* CONTENT ENDS */
@@ -242,6 +250,7 @@ button.learn-more {
 #projects h2 {
   text-align: center;
   font-size: 35px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   margin: 60px 0px;
   color: #f0f1ff;
@@ -294,6 +303,7 @@ button.learn-more {
 #projects .row .column button a:hover {
   transition: 0.5s ease-in-out;
   font-size: 18px;
+  letter-spacing: 0.4px;
   background-color: #fecfcf;
   box-shadow: 0px 0px 10px #ececec;
 }
@@ -333,6 +343,7 @@ footer .flex {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+  letter-spacing: 0.4px;
   line-height: 55px;
 }
 
@@ -346,6 +357,7 @@ footer .flex {
   color: var(--app-red-hover);
   line-height: 75px;
   font-size: 20px;
+  letter-spacing: 0.4px;
   font-weight: 400;
 }
 
