@@ -372,6 +372,14 @@ footer .flex {
   margin-bottom: 5%;
 }
 
+.card:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.card:nth-child(1) {
+  transition-delay: 600ms;
+}
+
 .card-title {
   font-size: 18px;
   text-transform: uppercase;
