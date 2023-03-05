@@ -14,7 +14,7 @@ mediaElements1.forEach((e) => mediaRun.observe(e));
 const mediaElements2 = document.querySelectorAll(".page3-box-1");
 mediaElements2.forEach((e) => mediaRun.observe(e));
 
-const form = document.getElementById("myForm");
+const form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
   const nameInput = document.getElementById("text");
   const emailInput = document.getElementById("email");
@@ -28,7 +28,7 @@ form.addEventListener("submit", function (event) {
     alert("Name is required.");
     event.preventDefault();
   } else if (!isValidName(nameValue)) {
-    alert("Please enter full anme.");
+    alert("Please enter full name.");
     event.preventDefault();
   }
 

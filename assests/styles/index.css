@@ -451,9 +451,10 @@ footer .flex {
 
   .icon-list {
     list-style: none !important;
-    line-height: 75px;
+    line-height: 100px;
     display: block;
     text-align: right;
+    color: #bebebe;
     background-color: transparent;
   }
 
