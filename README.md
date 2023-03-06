@@ -13,5 +13,5 @@ Uday
 
 ### OUR HOUSE WEBSITE
 
-Click [here](https://iamshubhamhere.github.io/Servify/) to visit.
+Click [here]() to visit.
 
