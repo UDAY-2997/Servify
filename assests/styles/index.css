@@ -436,23 +436,21 @@ footer .flex {
     max-width: 230px;
   }
   #hero .title1 {
-    color: var(--app-light-white);
     font-weight: bold;
+  }
+  .name {
+    font-size: 100px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 100%;
-    padding: 0 20px;
+    width: min(100% - 30px, 768px);
+    padding-right: 20px;
   }
 
   header {
     height: 100px;
-  }
-
-  .name {
-    font-size: 40px;
   }
 
   #hero .hero-text {
@@ -487,9 +485,6 @@ footer .flex {
     padding-left: 20px;
   }
 
-  .hero-banner {
-    width: 700px;
-  }
   #projects .row {
     margin: 30px 0px;
   }
@@ -513,9 +508,6 @@ footer .flex {
     font-size: 14px;
     line-height: 100px;
   }
-
-  #hero {
-  }
 }
 
 /* For mobile screens */
@@ -528,16 +520,20 @@ footer .flex {
     display: none;
   }
 
+  .icon-list ul li {
+    list-style: none;
+  }
+
   .icon-list {
     list-style: none !important;
     line-height: 100px;
     display: block;
     color: #bebebe;
-    background-color: #bebebe;
+    background: transparent;
   }
 
   .name {
-    font-size: 30px;
+    font-size: 60px;
     line-height: 25px;
     padding-bottom: 5px;
   }
