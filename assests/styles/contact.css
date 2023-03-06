@@ -1,3 +1,5 @@
+
+
 @import url(./reset.css);
 
 input::-webkit-outer-spin-button,
@@ -16,8 +18,9 @@ input[type="number"] {
   --app-dark-blue2: #192a36;
   --app-blue: #427bd2;
   --app-blue-hover: #364ee6;
-  --app-red: #ff3c57;
-  --app-red-hover: #ff2846;
+  --app-orange: #ff3c57;
+  --app-orange: #ff8001;
+  --app-orange-hover: #ff2846;
   --app-grey: #bebebe;
   --app-light-white: #f1f1f1;
 }
@@ -106,15 +109,16 @@ body {
   background-color: #192a36;
   font-size: 14px;
 }
-.contact-head h1 {
-  font-size: 40px;
-  color: var(--app-red);
-  font-weight: 800;
-  text-decoration: none;
-  margin: 20px;
+.name1 h1 {
   text-align: center;
+  font-size: 40px;
+  margin: 30px 0px;
+  font-weight: bold;
   text-transform: uppercase;
+  color: var(--app-orange);
+  text-decoration: none;
   letter-spacing: 0.6px;
+  line-height: 50px;
 }
 
 .contact-head p {
@@ -222,7 +226,7 @@ label {
   cursor: pointer;
   padding: 10px 35px;
   font-size: 16px;
-  background-color: var(--app-red);
+  background-color: var(--app-orange);
   color: var(--app-light-white);
   border-radius: 30px;
   margin-top: 20px;
@@ -238,7 +242,7 @@ label {
   padding: 10px 35px;
   font-size: 16px;
   background-color: transparent;
-  color: var(--app-red);
+  color: var(--app-orange);
   border-radius: 30px;
   margin-top: 20px;
   outline: none;
@@ -270,17 +274,6 @@ tr td {
 
 /* BOXES */
 
-.section-title h2 {
-  font-size: 30px;
-  color: var(--app-red);
-  font-weight: 700;
-  text-decoration: none;
-  margin: 5% 0px 0px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-}
-
 .our-features-small-text {
   margin: 0 auto 50px auto;
   text-align: center;
@@ -306,7 +299,7 @@ tr td {
   position: relative;
 }
 .card .card-block a {
-  color: var(--app-red);
+  color: var(--app-orange);
   font-weight: 700;
   font-size: 16px;
   text-decoration: none;
@@ -322,7 +315,7 @@ tr td {
   font-family: FontAwesome;
   position: absolute;
   font-size: 39px;
-  color: var(--app-red);
+  color: var(--app-orange);
   left: 0;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -393,7 +386,7 @@ footer .flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--app-red);
+  background: var(--app-orange);
   border-radius: 50%;
   margin: 22px 10px;
   color: #fff;
@@ -409,7 +402,7 @@ footer .flex {
 }
 
 .end p {
-  color: var(--app-red-hover);
+  color: var(--app-orange);
   line-height: 75px;
   font-size: 20px;
   font-weight: 400;
@@ -448,5 +441,8 @@ footer .flex {
   }
   .end p {
     font-size: 16px;
+  }
+  .card {
+    margin: 0px;
   }
 }
