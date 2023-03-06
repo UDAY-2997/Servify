@@ -532,9 +532,8 @@ footer .flex {
     list-style: none !important;
     line-height: 100px;
     display: block;
-    text-align: right;
     color: #bebebe;
-    background-color: transparent;
+    background-color: #bebebe;
   }
 
   .name {
